@@ -1,20 +1,20 @@
 import { useContext } from "react";
-import { Redirect } from "react-router-dom";
+import { LOGIN_ROUTE } from "../../../routes";
 import { UserContext } from "../../../util/userContext";
 
-const Home = () => {
-    let { user, setUser } = useContext(UserContext);
+
+const Home = (props) => {
+
+    const {setUser} = useContext(UserContext);
+
+    const logoutUser = () => {
+        setUser(null);
+        props.history.push(LOGIN_ROUTE);
+    }
 
     return (
         <div className="login">
             Home page
-            <button
-                onClick={() => {
-                    setUser(null);
-                }}
-            >
-                Logout
-            </button>
         </div>
     );
 };
