@@ -1,0 +1,74 @@
+
+.field {
+    position: relative ;
+}
+
+.field .icon ,
+.field .pass-toggle-btn {
+    position: absolute ;
+    top : 0 ;
+    left: 0 ;
+    width: 3rem ;
+    height: 3rem ;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.field .icon svg ,
+.field .pass-toggle-btn svg {
+    width : 1.5rem ;
+    height: 1.5rem ;
+    fill: var(--neutral-500);
+}
+
+.field label{
+    display: block ;
+    color: var(--neutral-500) ;
+    margin-bottom: 0.5rem ;
+    font-size: 0.9rem ;
+}
+
+.field input {
+    border: none ;
+    background-color: var(--neutral-200);
+    color: var(--neutral-700);
+    font-size: 1rem ;
+    padding: 1rem ;
+    height: 3rem ;
+    border-radius: 4px ;
+    min-width: 0 ;
+    width: 100% ;
+    color: var(--neutral-500);
+}
+
+.icon input {
+    padding-left: 3rem ;
+}
+
+.field input.invalid {
+    box-shadow: 0 0 0 2px var(--red);
+}
+
+.field input.invalid::placeholder {
+    color: var(--red) ;
+}
+
+.field .error-list {
+    margin-top: 0.5rem ;
+}
+
+.field .error-list .error {
+    font-size: 0.8rem ;
+    color: var(--red) ;
+}
+
+.password input {
+    padding-right: 3rem ;
+}
+
+.field .pass-toggle-btn {
+    left: auto ;
+    right: 0 ;
+    cursor: pointer ;
+}

@@ -1,0 +1,30 @@
+
+.form {
+    width: 100% ;
+    background-color: #fff ;
+    padding: 2rem ;
+    border-radius: 1rem ;
+    user-select: none ;
+}
+
+
+.form .form-title {
+    text-align: center ;
+    color: var(--primary);
+    font-weight: 700 ;
+    margin-bottom: 2rem ;
+    font-size: 1rem ;
+}
+
+.form .form-body > * + * {
+    margin-top: 1rem ;
+}
+
+.form .form-body > .error {
+    background-color: var(--red-light);
+    color: var(--red);
+    padding: 1rem ;
+    border-radius: 4px ;
+    text-align: center ;
+    text-transform: capitalize ;
+}

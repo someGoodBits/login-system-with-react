@@ -6,29 +6,19 @@
       "password": "admin123"
     },
     {
-      "id": 101,
-      "username": "jhon",
-      "password": "jhon123"
+      "username": "Anurag Kumar",
+      "password": "123456",
+      "id": 101
     },
     {
-      "username": "newUser",
-      "password": "pass123",
+      "username": "newuser",
+      "password": "123456",
       "id": 102
     },
     {
-      "username": "newuser2",
-      "password": "pass123",
+      "username": "asd",
+      "password": "asd",
       "id": 103
-    },
-    {
-      "username": "newuser2",
-      "password": "pass123",
-      "id": 104
-    },
-    {
-      "username": "abcd",
-      "password": "1234",
-      "id": 105
     }
   ]
 }

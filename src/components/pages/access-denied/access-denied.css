@@ -1,0 +1,43 @@
+
+.access-denied {
+    width: 100% ;
+    min-height: 100vh ;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column ;
+
+    color: var(--neutral-500);
+}
+
+.access-denied a {
+    text-decoration: none ;
+}
+
+.access-denied .msg {
+    font-size: 1.25rem ;
+}
+
+.access-denied .fancy-btn {
+    background-color: var(--primary);
+    color: var(--on-primary);
+    height: 4rem ;
+    padding: 0 1.5rem ;
+    border-radius: 8px ;
+    
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+
+    margin-top: 2rem ;
+    transition: all 200ms ease-out ;
+}
+
+.access-denied .fancy-btn svg {
+    width: 1.5rem ;
+    margin-left: 1rem ;
+}
+
+.access-denied .fancy-btn:hover {
+    box-shadow: 0 0 0 6px var(--primary-highlight);
+}

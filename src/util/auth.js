@@ -27,6 +27,10 @@ export const loginUser = async (username, password,callback) => {
  * @param  {Function} callback Function Signature (userData)
  */
 export const signupUser = (username, password,callback) => {
+
+    // TODO : validate username and password
+    // TODO : check existing user
+
     fetch(`${BASE_URL}/users`,{
         method: "POST",
         body  : JSON.stringify({

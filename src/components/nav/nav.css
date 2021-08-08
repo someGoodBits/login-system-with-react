@@ -1,0 +1,81 @@
+
+.nav {
+    position: sticky ;
+    top: 0 ;
+    left: 0 ;
+    width: 100% ;
+    height: 5rem ;
+    background-color: #fff ;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    padding: 0 2rem ;
+}
+
+.nav .site-logo {
+    display: flex ;
+    align-items: center ;
+}
+
+.nav .site-logo a {
+    font-weight: 900 ;
+    text-decoration: none ;
+    color: var(--primary);
+    font-size: 1.25rem ;
+}
+
+.nav .site-logo .title {
+    color: var(--neutral-500);
+    font-weight: 400 ;
+    margin-left: 0.5rem ;
+    font-size: 1rem ;
+}
+
+.nav .buttons {
+    display: flex ;
+    align-items: center ;
+}
+
+.nav .buttons > * + * {
+    margin-left: 1rem ;
+}
+
+.nav .buttons button {
+    padding: 0.5rem 1rem ;
+    border-radius: 500px ;
+    border: 0 ;
+    background-color: 0 ;
+    font-family: "roboto";
+    letter-spacing: 1px ;
+    text-transform: uppercase ;
+    font-weight: 500 ;
+    cursor: pointer ;
+    white-space: nowrap ;
+}
+
+.nav .buttons button.filled {
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    color: var(--on-primary);
+}
+
+.nav .buttons button.filled:hover {
+    box-shadow: 0 0 0 4px var(--primary-highlight);
+}
+
+.nav .buttons button.hollow {
+    border: 2px solid var(--primary);
+    background-color: transparent ;
+    color: var(--primary);
+}
+
+.nav .buttons button.hollow:hover {
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    color: var(--on-primary);
+    box-shadow: 0 0 0 4px var(--primary-highlight);
+}
+
+.nav .buttons .msg {
+    color: var(--neutral-500);
+}

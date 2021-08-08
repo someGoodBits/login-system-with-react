@@ -1,0 +1,63 @@
+.container {
+    width: 100% ;
+    min-height: calc(100vh - 5rem) ;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.form-container {
+    min-width: 24rem ;
+}
+
+.form .actions {
+    display: flex ;
+    justify-content: flex-end ;
+    margin-top: 2rem ;
+}
+
+.form .actions > * {
+    flex: 1 ;
+}
+
+.form .actions button {
+    padding: 0.75rem 1rem ;
+    border-radius: 500px ;
+    border: 0 ;
+    background-color: 0 ;
+    font-family: "roboto";
+    letter-spacing: 1px ;
+    text-transform: uppercase ;
+    font-weight: 500 ;
+    cursor: pointer ;
+    white-space: nowrap ;
+}
+
+.form .actions > * + * {
+    margin-left: 1rem ;
+}
+
+
+.form .actions button.filled {
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    color: var(--on-primary);
+}
+
+.form .actions button.filled:hover {
+    box-shadow: 0 0 0 4px var(--primary-highlight);
+}
+
+.form .actions button.hollow {
+    border: 2px solid var(--primary);
+    background-color: transparent ;
+    color: var(--primary);
+}
+
+.form .actions button.hollow:hover {
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    color: var(--on-primary);
+    box-shadow: 0 0 0 4px var(--primary-highlight);
+}

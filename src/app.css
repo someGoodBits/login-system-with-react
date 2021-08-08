@@ -1,0 +1,28 @@
+
+* {
+    padding: 0 ;
+    margin : 0 ;
+    box-sizing: border-box ;
+    outline: none ;
+}
+
+:root {
+    --neutral-100 : hsl(220,20%,98%) ;
+    --neutral-200 : hsl(220,10%,92%) ;
+    --neutral-300 : hsl(220,10%,75%) ;
+    --neutral-500 : hsl(220,10%,50%) ;
+    --neutral-700 : hsl(220,10%,30%) ;
+    --neutral-900 : hsl(220,20%,20%) ;
+
+    --on-primary : #fff ;
+    --bg : var(--neutral-200) ;
+    --primary : hsl(160,50%,50%);
+    --primary-highlight : hsl(160,50%,80%);
+    --red:hsl(10,80%,60%);
+    --red-light:hsl(10,80%,90%);
+}
+
+body {
+    background-color: var(--bg) ;
+    font-family: "Roboto", sans-serif;
+}
