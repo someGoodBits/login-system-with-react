@@ -1,6 +1,6 @@
 ## Login System Using React
 
-This is a demo app that 
+This is a demo app that implements
 1. Simple Auth Routines
 1. Protected Routes
 1. Login and Signup
@@ -27,6 +27,6 @@ This is a demo app that
 ### Steps to run the app :
 1. First open a new terminal and run <code>npm run start-server</code>
     - this starts a JSONServer for simulating backend functionality
-    - this will open a JSONServer on PORT 8000
+    - this will open a JSONServer on localhost PORT 8000
 1. Second open another ternminal and run <code>npm start</code>
-    - this will start the app
+    - this will start the app on localhost PORT 3000
