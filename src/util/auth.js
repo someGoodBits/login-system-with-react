@@ -16,6 +16,10 @@ export const loginUser = async (username, password,callback) => {
             } else {
                 callback(null,{code:"wrong username or password"}) ;
             }
+        })
+        .catch((error) => {
+            console.log(error.message);
+            callback(null,{code:error.message}) ;
         });
 };
 
@@ -44,5 +48,9 @@ export const signupUser = (username, password,callback) => {
     .then((response) => response.json())
     .then((data) => {
         callback(data);
-    });
+    })
+    .catch((error) => {
+        console.log(error.message);
+        callback(null,{code:error.message}) ;
+    });;
 }

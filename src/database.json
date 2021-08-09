@@ -19,6 +19,11 @@
       "username": "asd",
       "password": "asd",
       "id": 103
+    },
+    {
+      "username": "goodBits",
+      "password": "password",
+      "id": 104
     }
   ]
 }
